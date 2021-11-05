@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Concert Version="3.0">
+  <project Name="LifeLock_1.0"/>
+  
+  <file Lang="en" Name="en-US.json" Encoding="65001" HasBOM="False" Parser="JSON" GenerationType="0" Phase="" Home="src\lang\">
+    <target Lang="1036">
+      <output Encoding="65001" HasBOM="False" Relativepath="../lang/">fr-FR.json</output>
+    </target>
+    <target Lang="2057">
+      <output Encoding="65001" HasBOM="False" Relativepath="../lang/">en-GB.json</output>
+    </target>
+  </file>
+</Concert>

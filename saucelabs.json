@@ -1,0 +1,100 @@
+{
+  "src_folders": [
+    "test/functional/test"
+  ],
+  "page_objects_path": "test/functional/page",
+  "globals_path": "test/functional/globals.js",
+  "custom_assertions_path": "./test/functional/assertions",
+  "custom_commands_path": "./test/functional/commands",
+  "test_workers": {
+    "enabled": true,
+    "workers": 35
+  },
+  "selenium": {
+    "start_process": false,
+    "launch_url": ""
+  },
+  "test_settings": {
+    "default": {
+      "skip_testcases_on_fail": false,
+      "launch_url": "https://my-int.norton.com/extspa/lifelock",
+      "selenium_port": 80,
+      "selenium_host": "ondemand.saucelabs.com",
+      "username": "${SAUCE_USERNAME}",
+      "access_key": "${SAUCE_ACCESS_KEY}",
+      "silent": true,
+      "desiredCapabilities": {
+        "platform": "${OS}",
+        "browserName": "${BROWSER}",
+        "version": "${VERSION}",
+        "screenResolution": "${RES}",
+        "elementScrollBehavior": 1,
+        "javascriptEnabled": true,
+        "acceptInsecureCerts": true,
+        "chromeOptions": {
+          "args": [
+            "--disable-infobars"
+          ]
+        }
+      }
+    },
+    "dwm_dev_jp": {
+      "desiredCapabilities": {
+        "chromeOptions": {
+          "prefs": {
+            "intl.accept_languages": "ja"
+          }
+        }
+      },
+      "globals": {
+        "dwmUrl": "https://my-int.norton.com/extspa/dwmdev"
+      }
+    },
+    "dwm_int_jp": {
+      "desiredCapabilities": {
+        "chromeOptions": {
+          "prefs": {
+            "intl.accept_languages": "ja"
+          }
+        }
+      },
+      "globals": {
+        "dwmUrl": "https://my-int.norton.com/extspa/dwmint"
+      }
+    },
+    "dsp_dev_env": {
+      "launch_url": "https://my-int.norton.com/extspa/lifelockdev",
+      "globals": {
+        "password1": "Test1@LL",
+        "standardNC": "symtest1031180957@symantec.com",
+        "standardNCPassword": "Symtest103118!",
+        "advantageNC": "symtest1031180952@symantec.com",
+        "advantageNCPassword": "Symtest103118!",
+        "ultimateNC": "Symtest0222@gmail.com",
+        "ultimateNCPassword": "symtest0222!",
+        "ultimateWithJunior": "testjunior@yopmail.com",
+        "txmUser": "weavnejofsesasita@yopmail.com",
+        "txmUserPwd": "Test1@LL",
+        "lpmUser": "dsp14@yopmail.com",
+        "noLpmUser": "s123@yopmail.com",
+        "txmUser2": "automationtxm2@yopmail.com",
+        "creditDeepLinkEmail": "dsp51@yopmail.com",
+        "dspusername": "${DSP_USER}",
+        "SamlUrl": "https://login-int.norton.com/SAMLFilterSSOTest/",
+        "dwmUrl": "https://my-int.norton.com/extspa/dwmdev",
+        "memberportalUrl": "https://int1-fe-memberportal.dev.aws.lifelock.com/disposition",
+        "oamURL": "https://my-int.norton.com/extspa/lifelockdev?redirectUrl=online-account-monitoring"
+      }
+    },
+
+    "dsp_int_env": {
+      "launch_url": "https://my-int.norton.com/extspa/lifelockint",
+      "globals": {
+        "SamlUrl": "https://login-int.norton.com/SAMLFilterSSOTest/",
+        "dwmUrl": "https://my-int.norton.com/extspa/dwmint",
+        "oamURL": "https://my-int.norton.com/extspa/lifelockint?redirectUrl=online-account-monitoring",
+        "memberportalUrl": "https://int1-fe-memberportal.dev.aws.lifelock.com/disposition"
+      }
+    }
+  }
+}
